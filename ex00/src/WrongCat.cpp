@@ -14,19 +14,19 @@
 #include "../includes/utils.hpp"
 
 // Default Constructor
-WrongCat::WrongCat() : Animal() {
+WrongCat::WrongCat() : WrongAnimal("Wrong Cat") {
   std::cout << "WrongCat: ";
   colorprint("Default constructor called\n", GREEN);
 }
 
 // Parametrised constructor
-WrongCat::WrongCat(const std::string &type) : Animal(type) {
+WrongCat::WrongCat(const std::string &type) : WrongAnimal(type) {
   std::cout << "WrongCat: ";
   colorprint("Parametrised constructor called\n", GREEN);
 }
 
 // Copy constructor
-WrongCat::WrongCat(const WrongCat &copy) : Animal(copy) {
+WrongCat::WrongCat(const WrongCat &copy) : WrongAnimal(copy) {
   std::cout << "WrongCat: ";
   colorprint("Copy constructor called\n", GREEN);
 }

@@ -24,5 +24,5 @@ public:
   Dog &operator=(const Dog &copy); // Assignment operator overload
   ~Dog();                          // Destructor
 
-  void makeSound() const; // Overriding base class function
+  void makeSound() const override; // Overriding base class function
 };

@@ -25,7 +25,7 @@ public:
   WrongAnimal(const WrongAnimal &copy); // Copy constructor
   WrongAnimal &
   operator=(const WrongAnimal &copy); // Assignment operator overload
-  ~WrongAnimal();                     // Destructor
+  virtual ~WrongAnimal();             // Destructor
 
   // Subject functions
   virtual void makeSound() const;

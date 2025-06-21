@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils.hpp"
+#include "../includes/utils.hpp"
 
 void colorprint(std::string str, const std::string color) {
   std::cout << colortxt(str, color);

@@ -23,7 +23,7 @@ public:
   Animal(const std::string &type);       // Parametrised constructor
   Animal(const Animal &copy);            // Copy constructor
   Animal &operator=(const Animal &copy); // Assignment operator overload
-  ~Animal();                             // Destructor
+  virtual ~Animal();                     // Destructor
 
   // Subject functions
   virtual void makeSound() const;

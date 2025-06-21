@@ -14,7 +14,7 @@
 #include "../includes/utils.hpp"
 
 // Default Constructor
-Dog::Dog() : Animal() {
+Dog::Dog() : Animal("Dog") {
   std::cout << "Dog: ";
   colorprint("Default constructor called\n", GREEN);
 }

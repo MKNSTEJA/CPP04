@@ -12,10 +12,10 @@
 
 #pragma once
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 #include <iostream>
 
-class WrongCat : public Animal {
+class WrongCat : public WrongAnimal {
 public:
   // Constructor and Destructors
   WrongCat();                                // Default constructor
@@ -24,5 +24,5 @@ public:
   WrongCat &operator=(const WrongCat &copy); // Assignment operator overload
   ~WrongCat();                               // Destructor
 
-  void makeSound() const; // Overriding base class function
+  void makeSound() const override; // Overriding base class function
 };

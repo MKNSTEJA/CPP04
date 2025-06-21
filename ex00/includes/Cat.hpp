@@ -24,5 +24,5 @@ public:
   Cat &operator=(const Cat &copy); // Assignment operator overload
   ~Cat();                          // Destructor
 
-  void makeSound() const; // Overriding base class function
+  void makeSound() const override; // Overriding base class function
 };
