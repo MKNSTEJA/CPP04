@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 11:57:00 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 11:57:51 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/06/21 19:20:22 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ public:
   Dog &operator=(const Dog &copy); // Assignment operator overload
   ~Dog();                          // Destructor
 
-  void makeSound() override; // Overriding base class function
+  void makeSound() const; // Overriding base class function
 };

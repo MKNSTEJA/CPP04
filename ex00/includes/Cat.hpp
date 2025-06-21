@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 11:50:05 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 11:56:10 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/06/21 19:20:52 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ public:
   Cat &operator=(const Cat &copy); // Assignment operator overload
   ~Cat();                          // Destructor
 
-  void makeSound() override; // Overriding base class function
+  void makeSound() const; // Overriding base class function
 };
