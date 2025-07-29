@@ -72,7 +72,7 @@ int main() {
     for (int i = 0; i < 6; ++i) {
       // Even indices: Dog; Odd indices: Cat
       if (i % 2 == 0)
-        zoo[i] = new Dog(); 
+        zoo[i] = new Dog();
       else
         zoo[i] = new Cat();
     }
