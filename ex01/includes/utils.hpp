@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 12:23:59 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/04 00:43:58 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:04:54 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ const std::string ORANGE = "\033[38;5;208m"; // Extended ANSI: orange!
 const std::string RESET = "\033[0m";
 const std::string ITALIC = "\033[3m";
 
-void colorprint(std::string str, const std::string color);
-std::string colortxt(std::string str, const std::string color);
+void colorprint(const std::string &str, const std::string &color);
+std::string colortxt(const std::string &str, const std::string &color);
 void section(const std::string &title);

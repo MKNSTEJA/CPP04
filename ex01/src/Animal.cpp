@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 11:58:38 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 19:41:43 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:29:02 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,6 @@
 Animal::Animal() {
   std::cout << "Animal: ";
   colorprint("Default constructor called\n", GREEN);
-}
-
-// Parametrised constructor
-Animal::Animal(const std::string &type) : _type(type) {
-  std::cout << "Animal: ";
-  colorprint("Parametrised constructor called\n", GREEN);
 }
 
 // Copy constructor
