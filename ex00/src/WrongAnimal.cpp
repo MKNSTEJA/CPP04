@@ -19,12 +19,6 @@ WrongAnimal::WrongAnimal() {
   colorprint("Default constructor called\n", GREEN);
 }
 
-// Parametrised constructor
-WrongAnimal::WrongAnimal(const std::string &type) : _type(type) {
-  std::cout << "WrongAnimal: ";
-  colorprint("Parametrised constructor called\n", GREEN);
-}
-
 // Copy constructor
 WrongAnimal::WrongAnimal(const WrongAnimal &copy) : _type(copy.getType()) {
   std::cout << "WrongAnimal: ";
@@ -53,5 +47,6 @@ void WrongAnimal::setType(const std::string &type) { this->_type = type; }
 std::string WrongAnimal::getType() const { return (this->_type); }
 
 void WrongAnimal::makeSound() const {
-  colorprint(colortxt("Silence echoes\n", YELLOW), ITALIC);
+  std::cout << "WrongAnimal: ";
+  colorprint(colortxt("Something doesn't sound right\n", YELLOW), ITALIC);
 }

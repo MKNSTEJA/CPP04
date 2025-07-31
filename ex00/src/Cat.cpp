@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 17:06:21 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 19:30:27 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 15:21:17 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,10 @@
 #include "../includes/utils.hpp"
 
 // Default Constructor
-Cat::Cat() : Animal("Cat") {
+Cat::Cat() : Animal() {
+  _type = "Cat";
   std::cout << "Cat: ";
   colorprint("Default constructor called\n", GREEN);
-}
-
-// Parametrised constructor
-Cat::Cat(const std::string &type) : Animal(type) {
-  std::cout << "Cat: ";
-  colorprint("Parametrised constructor called\n", GREEN);
 }
 
 // Copy constructor

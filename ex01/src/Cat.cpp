@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 17:06:21 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/07/31 13:34:28 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 14:51:27 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,6 @@ void Cat::makeSound() const {
   std::cout << "Cat: ";
   colorprint("Miaaaauuuuu!\n", YELLOW);
 }
+
+// Getter for Brain
+Brain *Cat::getBrain() { return (_brain); }

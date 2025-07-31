@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.hpp                                       :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/21 19:11:36 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 19:19:46 by kmummadi         ###   ########.fr       */
+/*   Created: 2025/06/21 11:50:05 by kmummadi          #+#    #+#             */
+/*   Updated: 2025/07/31 15:21:26 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "WrongAnimal.hpp"
+#include "Animal.hpp"
 #include <iostream>
 
-class WrongCat : public WrongAnimal {
+class Cat : public Animal {
 public:
   // Constructor and Destructors
-  WrongCat();                                // Default constructor
-  WrongCat(const std::string &type);         // Parametrised constructor
-  WrongCat(const WrongCat &copy);            // Copy constructor
-  WrongCat &operator=(const WrongCat &copy); // Assignment operator overload
-  ~WrongCat();                               // Destructor
+  Cat();                           // Default constructor
+  Cat(const Cat &copy);            // Copy constructor
+  Cat &operator=(const Cat &copy); // Assignment operator overload
+  ~Cat();                          // Destructor
 
   void makeSound() const override; // Overriding base class function
 };

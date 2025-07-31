@@ -21,7 +21,6 @@ protected:
 public:
   // Constructors and Destructors
   WrongAnimal();                        // Default constructor
-  WrongAnimal(const std::string &type); // Parametrised constructor
   WrongAnimal(const WrongAnimal &copy); // Copy constructor
   WrongAnimal &
   operator=(const WrongAnimal &copy); // Assignment operator overload

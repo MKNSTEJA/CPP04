@@ -7,7 +7,7 @@ SRC_DIR   := src
 OBJ_DIR   := obj
 
 # Source files
-SRCS := main.cpp Animal.cpp Cat.cpp Dog.cpp utils.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS := main.cpp Animal.cpp Cat.cpp Dog.cpp utils.cpp
 
 SRC_PATHS := $(addprefix $(SRC_DIR)/, $(SRCS))
 OBJ_PATHS := $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))

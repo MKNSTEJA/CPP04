@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 11:50:05 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/07/31 13:28:26 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 14:31:49 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,7 @@ public:
   ~Cat();                          // Destructor
 
   void makeSound() const override; // Overriding base class function
+
+  // Getter and Setter for brain
+  Brain *getBrain();
 };

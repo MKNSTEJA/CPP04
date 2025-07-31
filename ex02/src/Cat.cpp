@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/21 19:14:05 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 19:30:51 by kmummadi         ###   ########.fr       */
+/*   Created: 2025/06/21 17:06:21 by kmummadi          #+#    #+#             */
+/*   Updated: 2025/07/31 15:21:17 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/WrongAnimal.hpp"
+#include "../includes/Cat.hpp"
 #include "../includes/utils.hpp"
 
 // Default Constructor
-WrongAnimal::WrongAnimal() {
-  std::cout << "WrongAnimal: ";
+Cat::Cat() : Animal() {
+  _type = "Cat";
+  std::cout << "Cat: ";
   colorprint("Default constructor called\n", GREEN);
 }
 
-// Parametrised constructor
-WrongAnimal::WrongAnimal(const std::string &type) : _type(type) {
-  std::cout << "WrongAnimal: ";
-  colorprint("Parametrised constructor called\n", GREEN);
-}
-
 // Copy constructor
-WrongAnimal::WrongAnimal(const WrongAnimal &copy) : _type(copy.getType()) {
-  std::cout << "WrongAnimal: ";
+Cat::Cat(const Cat &copy) : Animal(copy) {
+  std::cout << "Cat: ";
   colorprint("Copy constructor called\n", GREEN);
 }
 
 // Assignment operator overload
-WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy) {
-  std::cout << "WrongAnimal: ";
+Cat &Cat::operator=(const Cat &copy) {
+  std::cout << "Cat: ";
   colorprint("Assignment operator overload called\n", GREEN);
 
   if (this != &copy)
@@ -42,16 +37,13 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy) {
 }
 
 // Destructor
-WrongAnimal::~WrongAnimal() {
-  std::cout << "WrongAnimal: ";
+Cat::~Cat() {
+  std::cout << "Cat: ";
   colorprint("Destructor called\n", GREEN);
 }
 
-// Setters and Getters
-void WrongAnimal::setType(const std::string &type) { this->_type = type; }
-
-std::string WrongAnimal::getType() const { return (this->_type); }
-
-void WrongAnimal::makeSound() const {
-  colorprint(colortxt("Silence echoes\n", YELLOW), ITALIC);
+// Override functions
+void Cat::makeSound() const {
+  std::cout << "Cat: ";
+  colorprint("Miaaaauuuuu!\n", YELLOW);
 }

@@ -19,10 +19,9 @@ class WrongCat : public WrongAnimal {
 public:
   // Constructor and Destructors
   WrongCat();                                // Default constructor
-  WrongCat(const std::string &type);         // Parametrised constructor
   WrongCat(const WrongCat &copy);            // Copy constructor
   WrongCat &operator=(const WrongCat &copy); // Assignment operator overload
   ~WrongCat();                               // Destructor
 
-  void makeSound() const override; // Overriding base class function
+  void makeSound() const; // Overriding base class function
 };

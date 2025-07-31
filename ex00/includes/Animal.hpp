@@ -6,7 +6,7 @@
 /*   By: kmummadi <kmummadi@student.42heilbronn.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 11:42:16 by kmummadi          #+#    #+#             */
-/*   Updated: 2025/06/21 19:21:09 by kmummadi         ###   ########.fr       */
+/*   Updated: 2025/07/31 15:22:22 by kmummadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ protected:
 public:
   // Constructors and Destructors
   Animal();                              // Default constructor
-  Animal(const std::string &type);       // Parametrised constructor
   Animal(const Animal &copy);            // Copy constructor
   Animal &operator=(const Animal &copy); // Assignment operator overload
   virtual ~Animal();                     // Destructor

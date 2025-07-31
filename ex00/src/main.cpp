@@ -94,17 +94,22 @@ int main() {
     const WrongAnimal *wrong = new WrongAnimal(); // Base class
     const WrongAnimal *wcat =
         new WrongCat(); // Derived, but makeSound not virtual
+    const WrongCat *wrongcat = new WrongCat();
 
     // Types should reflect class names
     std::cout << "[Wrong] WrongAnimal type: " << wrong->getType() << std::endl;
     std::cout << "[Wrong] WrongCat type:    " << wcat->getType() << std::endl;
+    std::cout << "[Wrong] WrongCat type:    " << wrongcat->getType()
+              << std::endl;
 
     // Both calls invoke WrongAnimal::makeSound(), not WrongCat
-    wrong->makeSound(); // Expected: WrongAnimal sound
-    wcat->makeSound();  // Expected: WrongAnimal sound again
+    wrong->makeSound();    // Expected: WrongAnimal sound
+    wcat->makeSound();     // Expected: WrongAnimal sound again
+    wrongcat->makeSound(); // Expected: WrongCat sound
 
     delete wrong;
     delete wcat;
+    delete wrongcat;
   }
 
   // Test 5: Virtual Destructor Invocation

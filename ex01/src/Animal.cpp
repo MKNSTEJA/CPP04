@@ -47,5 +47,6 @@ void Animal::setType(const std::string &type) { this->_type = type; }
 std::string Animal::getType() const { return (this->_type); }
 
 void Animal::makeSound() const {
+  std::cout << "Animal: ";
   colorprint("Silence echoes....\n", YELLOW + ITALIC);
 }
